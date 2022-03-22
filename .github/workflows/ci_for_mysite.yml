@@ -26,5 +26,5 @@ jobs:
         run: |
           docker buildx build \
             --push \
-            --platform linux/arm64 \
+            --platform linux/arm64,linux/amd64 \
             --tag registry.gitlab.com/burakcanyukselen/medium-container-registry/mypersonalwebsite .
